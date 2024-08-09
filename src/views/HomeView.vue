@@ -1,243 +1,93 @@
 <script setup>
 import { ref, computed } from "vue";
 import Slider from "../components/Slider.vue";
-import FilterCard from "../components/FilterCard.vue";
-import Card from "../components/Card.vue";
-import Pagination from "../components/Pagination.vue";
-
-const itemsPerPage = 9;
-const currentPage = ref(1);
-
-const data = [
-  {
-    id: 0,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "1.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 1,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "2.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 2,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "3.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 3,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "4.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 4,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "5.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 5,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "6.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 6,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "1.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 7,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "2.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 8,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "3.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 9,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "4.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 10,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "5.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 11,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "6.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 12,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "1.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 13,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "2.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 14,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "3.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 15,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "4.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 16,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "5.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 17,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "6.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 18,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "1.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 19,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "2.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 20,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "3.jpg",
-    size: false,
-    price: 570,
-  },
-  {
-    id: 21,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "4.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 22,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "5.jpg",
-    size: true,
-    price: 570,
-  },
-  {
-    id: 23,
-    name: "Товар",
-    description: "Description",
-    imgSrc: "6.jpg",
-    size: true,
-    price: 570,
-  },
-];
-
-const totalPages = computed(() => Math.ceil(data.length / itemsPerPage));
-
-const paginatedData = computed(() => {
-  const start = (currentPage.value - 1) * itemsPerPage;
-  const end = start + itemsPerPage;
-  return data.slice(start, end);
-});
-
-const handlePageChange = (page) => {
-  currentPage.value = page;
-};
+import AccordeonCard from "../components/AccordeonCard.vue";
 </script>
 <template>
-  <main class="w-full px-20 mx-auto max-w-388 mt-25 2xl:px-10">
+  <main class="box-content max-w-screen-xl px-10 mx-auto mt-17 2xl:px-10">
     <Slider />
-    <section
-      class="grid items-start grid-cols-2 gap-8 mt-8 mb-16 lg:grid-cols-3 2xl:grid-cols-4"
-    >
-      <FilterCard />
-      <div class="lg:col-span-2 2xl:col-span-3">
-        <div
-          class="grid items-center justify-center grid-cols-1 gap-8 lg:grid-cols-2 2xl:grid-cols-3"
-        >
-          <Card
-            v-for="(item, index) in paginatedData"
-            :key="index"
-            :product="item"
-          />
-        </div>
-        <Pagination
-          :currentPage="currentPage"
-          :totalPages="totalPages"
-          @page-changed="handlePageChange"
-        />
+
+    <section class="grid grid-cols-3 gap-5 mb-16">
+      <div class="w-full p-4 bg-white rounded-3xl">
+        <img class="mb-16 w-17 h-17" src="/icons/star.svg" alt="" />
+        <h3 class="mb-2 text-xl font-medium leading-6 text-txt font-wide">
+          Получайте промокоды и бонусы за поиск багов
+        </h3>
+        <p class="text-sm font-regular text-txt font-text">
+          МТС постоянно выпускает новые диджитал-продукты, и вы можете сделать
+          их удобнее. Находите баги, отправляйте отчёты об ошибках и получайте
+          вознаграждение.
+        </p>
+      </div>
+
+      <div class="w-full p-4 bg-white rounded-3xl">
+        <img class="mb-16 w-17 h-17" src="/icons/star.svg" alt="" />
+        <h3 class="mb-2 text-xl font-medium leading-6 text-txt font-wide">
+          Получайте промокоды и бонусы за поиск багов
+        </h3>
+        <p class="text-sm font-regular text-txt font-text">
+          МТС постоянно выпускает новые диджитал-продукты, и вы можете сделать
+          их удобнее. Находите баги, отправляйте отчёты об ошибках и получайте
+          вознаграждение.
+        </p>
+      </div>
+
+      <div class="w-full p-4 bg-white rounded-3xl">
+        <img class="mb-16 w-17 h-17" src="/icons/star.svg" alt="" />
+        <h3 class="mb-2 text-xl font-medium leading-6 text-txt font-wide">
+          Получайте промокоды и бонусы за поиск багов
+        </h3>
+        <p class="text-sm font-regular text-txt font-text">
+          МТС постоянно выпускает новые диджитал-продукты, и вы можете сделать
+          их удобнее. Находите баги, отправляйте отчёты об ошибках и получайте
+          вознаграждение.
+        </p>
       </div>
     </section>
+
+    <section class="mb-16">
+      <h1 class="mb-8 text-4xl font-medium leading-13 text-txt font-wide">
+        С нами стали лучше
+      </h1>
+      <div class="flex items-center gap-5">
+        <div
+          class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+        >
+          <img src="/icons/vkLogo.png" alt="VK logo" />
+        </div>
+
+        <div
+          class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+        >
+          <img src="/icons/spotifyLogo.png" alt="Spotify logo" />
+        </div>
+
+        <div
+          class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+        >
+          <img src="/icons/vkLogo.png" alt="VK logo" />
+        </div>
+
+        <div
+          class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+        >
+          <img src="/icons/okLogo.png" alt="OK logo" />
+        </div>
+
+        <div
+          class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+        >
+          <img src="/icons/spotifyLogo.png" alt="Spotify logo" />
+        </div>
+
+        <div
+          class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+        >
+          <img src="/icons/vkLogo.png" alt="VK logo" />
+        </div>
+      </div>
+    </section>
+
+    <AccordeonCard />
   </main>
 </template>

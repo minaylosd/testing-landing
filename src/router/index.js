@@ -13,16 +13,6 @@ const router = new VueRouter({
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/balance',
-      name: 'balance',
-      component: () => import('../views/BalanceHistoryView.vue')
-    },
-    {
-      path: '/purchases',
-      name: 'purchases',
-      component: () => import('../views/PurchasesHistoryView.vue')
-    }
   ]
 })
 

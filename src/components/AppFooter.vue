@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full py-16 bg-tertiary">
-    <div class="px-20 mx-auto 2xl:px-8 max-w-388">
+    <div class="box-content max-w-screen-xl px-20 mx-auto 2xl:px-10">
       <div class="grid items-start w-full grid-cols-12 gap-8">
         <div class="col-span-4">
           <h2 class="mb-4 text-xl font-bold leading-6 font-text text-txt">

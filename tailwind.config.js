@@ -19,9 +19,20 @@ module.exports = {
       'positive': '#26cd58',
     },
     screens: {
-      'lg': '1180px',
-      'xl': '1280px',
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1240px',
+      // => @media (min-width: 1240px) { ... }
+
       '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       gridTemplateColumns: {
@@ -31,6 +42,7 @@ module.exports = {
         wide: ["var(--font-wide)"],
         sans: ["var(--font-sans)"],
         compact: ["var(--font-compact)"],
+        text: ["var(--font-text)"],
       },
       fontSize: {
         '2.5': "0.625rem",
@@ -57,6 +69,9 @@ module.exports = {
       borderRadius: {
         '4xl': "32px",
       },
+      lineHeight: {
+        '13': '3.25rem',
+      }
     },
   },
   plugins: [],
