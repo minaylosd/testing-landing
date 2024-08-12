@@ -13,18 +13,18 @@
       <Slide
         v-for="(slide, index) in slides"
         :key="index"
-        class="relative overflow-hidden h-[60vh] md:h-auto rounded-2xl md:rounded-4xl"
+        class="relative overflow-hidden min-h-[468px] h-[60vh] md:h-auto rounded-2xl md:rounded-4xl"
       >
         <img
-          class="object-cover md:w-full w-full md:h-inherit h-full md:rounded-4xl rounded-2xl max-w-[200vw] overflow-hidden"
+          class="absolute top-0 left-0 object-cover md:w-full w-full md:h-inherit h-full md:rounded-4xl rounded-2xl max-w-[200vw] overflow-hidden"
           :src="slide.image"
           :alt="slide.heading"
         />
 
         <div
-          class="absolute top-0 left-0 grid grid-cols-1 px-5 pb-8 pt-13 md:px-10 lg:grid-cols-2 min-h-35"
+          class="relative top-0 left-0 grid grid-cols-1 px-5 pb-8 pt-13 md:px-10 lg:grid-cols-2 min-h-35"
         >
-          <div class="xl:h-[300px] xl:mb-6 mb-4">
+          <div class="md:h-[300px] xl:mb-6 mb-4">
             <h1
               class="mb-4 text-3xl font-medium text-white md:leading-none font-wide lg:text-heading"
             >
