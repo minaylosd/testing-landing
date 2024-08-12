@@ -1,6 +1,10 @@
 <template>
-  <section class="bg-white rounded-[60px] p-16 mb-16">
-    <h1 class="mb-8 text-4xl font-medium leading-13 text-txt font-wide">
+  <section
+    class="bg-white lg:rounded-[60px] md:rounded-[48px] rounded-4xl md:px-16 md:py-16 py-8 px-8 md:mb-16 mb-10"
+  >
+    <h1
+      class="mb-4 text-2xl font-medium md:mb-8 md:text-4xl md:leading-13 text-txt font-wide"
+    >
       Часто задаваемые вопросы
     </h1>
     <div class="flex flex-col gap-5">
@@ -10,12 +14,13 @@
         class="flex flex-col items-start justify-between w-full overflow-hidden border-b border-divider"
       >
         <div
-          :class="isOpen(index) ? 'h-auto' : 'max-h-12'"
-          class="flex items-start justify-between w-full pb-5 transition-all duration-500 cursor-pointer"
+          class="flex items-start justify-between w-full h-auto pb-3 transition-all duration-500 cursor-pointer md:pb-5"
           @click="toggleAccordion(index)"
         >
-          <div class="max-w-[630px]">
-            <h3 class="mb-3 text-xl font-medium text-txt font-wide">
+          <div class="md:max-w-[630px] max-w-[80%]">
+            <h3
+              class="mb-2 text-lg font-medium md:mb-3 md:text-xl text-txt font-wide"
+            >
               {{ item.question }}
             </h3>
             <p
