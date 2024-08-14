@@ -1,13 +1,12 @@
 <script setup>
-import { ref, computed } from "vue";
-import Slider from "../components/Slider.vue";
 import AccordeonCard from "../components/AccordeonCard.vue";
+import Carousel from "../components/Carousel.vue";
 </script>
 <template>
   <main
     class="max-w-screen-sm px-5 mx-auto md:max-w-screen-md xl:max-w-screen-xl lg:max-w-screen-lg xl:mt-17 mt-13"
   >
-    <Slider />
+    <Carousel />
 
     <section class="grid grid-cols-1 gap-5 mb-10 md:mb-16 md:grid-cols-3">
       <div class="w-full p-4 bg-white rounded-3xl">
