@@ -11,7 +11,7 @@
         ><div class="md:w-[50px] md:h-[50px] w-8 h-8"><HeaderLogo /></div>
         Тестирование</router-link
       >
-      <div class="flex items-center gap-4">
+      <div class="relative flex items-center gap-4 group">
         <router-link
           class="md:flex items-center p-2.5 text-17 leading-6 font-medium font-wide text-txt hidden"
           to="/balance"
@@ -22,6 +22,29 @@
           to="/purchases"
           ><span class="px-2 py-1">Войти</span></router-link
         >
+        <div
+          class="absolute left-0 hidden w-full pt-4 top-full group-hover:block"
+        >
+          <div
+            class="flex flex-col gap-[1px] w-full bg-white rounded-2xl p-1.5"
+          >
+            <router-link
+              to="/"
+              class="p-1.5 bg-transparent hover:bg-divider/25 rounded-xl font-compact font-normal text-sm text-txt"
+              ><span class="py-0.5"></span>Справка</router-link
+            >
+            <router-link
+              to="/"
+              class="p-1.5 bg-transparent hover:bg-divider/25 rounded-xl font-compact font-normal text-sm text-txt"
+              ><span class="py-0.5"></span>Видеоинструкции</router-link
+            >
+            <router-link
+              to="/"
+              class="p-1.5 bg-transparent hover:bg-divider/25 rounded-xl font-compact font-normal text-sm text-txt"
+              ><span class="py-0.5"></span>Задать вопрос</router-link
+            >
+          </div>
+        </div>
       </div>
     </div>
   </header>
