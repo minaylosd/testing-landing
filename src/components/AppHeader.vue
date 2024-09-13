@@ -14,16 +14,16 @@
       <div class="relative flex items-center gap-4 group">
         <router-link
           class="md:flex items-center p-2.5 text-17 leading-6 font-medium font-wide text-txt hidden"
-          to="/balance"
+          to="/"
           ><span class="px-2 py-1">Поддержка</span></router-link
         >
         <router-link
           class="flex items-center md:p-2.5 p-1.5 md:text-xs text-[10px] font-bold tracking-wider uppercase font-wide text-white rounded-2xl bg-brand"
-          to="/purchases"
+          to="/"
           ><span class="px-2 py-1">Войти</span></router-link
         >
         <div
-          class="absolute left-0 hidden w-full pt-4 top-full group-hover:block"
+          class="absolute left-0 hidden w-full pt-4 top-full md:group-hover:block"
         >
           <div
             class="flex flex-col gap-[1px] w-full bg-white rounded-2xl p-1.5"
