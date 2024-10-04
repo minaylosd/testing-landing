@@ -53,62 +53,200 @@ import Carousel from "../components/Carousel.vue";
         С нами стали лучше
       </h1>
       <div
-        class="grid items-center justify-center grid-cols-2 gap-5 md:grid-cols-3 lg:flex"
+        data-animation="ticker__wrapper"
+        class="relative flex w-full overflow-hidden h-[90px]"
       >
         <div
-          class="lg:w-[190px] w-full h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+          data-animation="ticker"
+          class="flex flex-nowrap gap-5 absolute top-0 left-0 w-fit h-[90px]"
         >
-          <img
-            class="w-4/6 xl:w-auto md:w-3/4"
-            src="/icons/vkLogo.png"
-            alt="VK logo"
-          />
-        </div>
+          <div class="flex items-center justify-center gap-5">
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img class="w-auto" src="/icons/okLogo.png" alt="OK logo" />
+            </div>
 
-        <div
-          class="lg:w-[190px] w-full h-[90px] rounded-4xl border border-divider flex items-center justify-center"
-        >
-          <img
-            class="w-4/6 xl:w-auto lg:w-3/4"
-            src="/icons/spotifyLogo.png"
-            alt="Spotify logo"
-          />
-        </div>
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-3/4 xl:w-auto"
+                src="/icons/spotifyLogo.png"
+                alt="Spotify logo"
+              />
+            </div>
 
-        <div
-          class="lg:w-[190px] w-full h-[90px] rounded-4xl border border-divider flex items-center justify-center"
-        >
-          <img
-            class="w-4/6 xl:w-auto lg:w-3/4"
-            src="/icons/vkLogo.png"
-            alt="VK logo"
-          />
-        </div>
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-3/4 xl:w-auto"
+                src="/icons/vkLogo.png"
+                alt="VK logo"
+              />
+            </div>
 
-        <div
-          class="lg:w-[190px] w-full h-[90px] rounded-4xl border border-divider flex items-center justify-center"
-        >
-          <img class="w-auto" src="/icons/okLogo.png" alt="OK logo" />
-        </div>
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 md:w-3/4"
+                src="/icons/Verse logo.png"
+                alt="MTS Verse logo"
+              />
+            </div>
 
-        <div
-          class="lg:w-[190px] w-full h-[90px] rounded-4xl border border-divider flex items-center justify-center"
-        >
-          <img
-            class="w-4/6 xl:w-auto lg:w-3/4"
-            src="/icons/spotifyLogo.png"
-            alt="Spotify logo"
-          />
-        </div>
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-3/4"
+                src="/icons/Membrana Kids.png"
+                alt="Membrana Kids logo"
+              />
+            </div>
 
-        <div
-          class="lg:w-[190px] w-full h-[90px] rounded-4xl border border-divider flex items-center justify-center"
-        >
-          <img
-            class="w-4/6 xl:w-auto lg:w-3/4"
-            src="/icons/vkLogo.png"
-            alt="VK logo"
-          />
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img class="w-3/4" src="/icons/NUUM.png" alt="NUUM logo" />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/MTS stroki.png"
+                alt="MTS Строки logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/MTS auto.png"
+                alt="MTS Авто logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/tododo.png"
+                alt="Тудуду logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/MTS smart home.png"
+                alt="MTS Умный дом logo"
+              />
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-5">
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img class="w-auto" src="/icons/okLogo.png" alt="OK logo" />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-3/4 xl:w-auto"
+                src="/icons/spotifyLogo.png"
+                alt="Spotify logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-3/4 xl:w-auto"
+                src="/icons/vkLogo.png"
+                alt="VK logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 md:w-3/4"
+                src="/icons/Verse logo.png"
+                alt="MTS Verse logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-3/4"
+                src="/icons/Membrana Kids.png"
+                alt="Membrana Kids logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img class="w-3/4" src="/icons/NUUM.png" alt="NUUM logo" />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/MTS stroki.png"
+                alt="MTS Строки logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/MTS auto.png"
+                alt="MTS Авто logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/tododo.png"
+                alt="Тудуду logo"
+              />
+            </div>
+
+            <div
+              class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
+            >
+              <img
+                class="w-4/6 xl:w-auto md:w-3/4"
+                src="/icons/MTS smart home.png"
+                alt="MTS Умный дом logo"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -116,3 +254,30 @@ import Carousel from "../components/Carousel.vue";
     <AccordeonCard />
   </main>
 </template>
+
+<style scoped>
+div[data-animation="ticker"] {
+  animation: ticker 25s linear infinite;
+}
+
+div[data-animation="ticker__wrapper"] {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 2%,
+    black 98%,
+    transparent
+  );
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
