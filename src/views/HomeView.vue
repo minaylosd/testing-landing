@@ -64,14 +64,18 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img class="w-auto" src="/icons/okLogo.png" alt="OK logo" />
+              <img
+                class="object-cover w-auto h-9"
+                src="/icons/okLogo.png"
+                alt="OK logo"
+              />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-3/4 xl:w-auto"
+                class="object-cover w-auto h-9"
                 src="/icons/spotifyLogo.png"
                 alt="Spotify logo"
               />
@@ -81,7 +85,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-3/4 xl:w-auto"
+                class="object-cover w-auto h-6"
                 src="/icons/vkLogo.png"
                 alt="VK logo"
               />
@@ -91,7 +95,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/Verse logo.png"
                 alt="MTS Verse logo"
               />
@@ -101,7 +105,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/Membrana Kids.png"
                 alt="Membrana Kids logo"
               />
@@ -110,14 +114,18 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img class="w-3/4" src="/icons/NUUM.png" alt="NUUM logo" />
+              <img
+                class="object-cover w-auto h-12"
+                src="/icons/NUUM.png"
+                alt="NUUM logo"
+              />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/MTS stroki.png"
                 alt="MTS Строки logo"
               />
@@ -127,7 +135,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/MTS auto.png"
                 alt="MTS Авто logo"
               />
@@ -137,7 +145,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/tododo.png"
                 alt="Тудуду logo"
               />
@@ -147,7 +155,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/MTS smart home.png"
                 alt="MTS Умный дом logo"
               />
@@ -158,14 +166,18 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img class="w-auto" src="/icons/okLogo.png" alt="OK logo" />
+              <img
+                class="object-cover w-auto h-9"
+                src="/icons/okLogo.png"
+                alt="OK logo"
+              />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-3/4 xl:w-auto"
+                class="object-cover w-auto h-9"
                 src="/icons/spotifyLogo.png"
                 alt="Spotify logo"
               />
@@ -175,7 +187,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-3/4 xl:w-auto"
+                class="object-cover w-auto h-6"
                 src="/icons/vkLogo.png"
                 alt="VK logo"
               />
@@ -185,7 +197,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/Verse logo.png"
                 alt="MTS Verse logo"
               />
@@ -195,7 +207,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/Membrana Kids.png"
                 alt="Membrana Kids logo"
               />
@@ -204,14 +216,18 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img class="w-3/4" src="/icons/NUUM.png" alt="NUUM logo" />
+              <img
+                class="object-cover w-auto h-12"
+                src="/icons/NUUM.png"
+                alt="NUUM logo"
+              />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/MTS stroki.png"
                 alt="MTS Строки logo"
               />
@@ -221,7 +237,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/MTS auto.png"
                 alt="MTS Авто logo"
               />
@@ -231,7 +247,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/tododo.png"
                 alt="Тудуду logo"
               />
@@ -241,7 +257,7 @@ import Carousel from "../components/Carousel.vue";
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
               <img
-                class="w-4/6 xl:w-auto md:w-3/4"
+                class="object-cover w-auto h-9"
                 src="/icons/MTS smart home.png"
                 alt="MTS Умный дом logo"
               />
