@@ -277,7 +277,7 @@ div[data-animation="ticker__wrapper"] {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 10px));
   }
 }
 </style>
