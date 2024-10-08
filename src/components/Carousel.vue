@@ -9,146 +9,54 @@
       >
         <a class="w-full" href="/">
           <img
-            class="absolute top-0 left-0 object-cover md:w-full w-full md:h-inherit h-full md:rounded-4xl rounded-2xl max-w-[200vw]"
-            src="/carousel.jpg"
+            class="absolute top-0 left-0 object-cover w-full h-auto md:w-auto md:h-full md:rounded-4xl rounded-2xl max-w-[200vw]"
+            :src="bannerSrc"
             alt="slide.heading"
           />
-          <div
-            class="relative top-0 left-0 grid grid-cols-1 px-5 pb-8 pt-13 md:px-10 lg:grid-cols-2 min-h-35"
-          >
-            <div class="md:h-[300px] xl:mb-6 mb-4">
-              <h1
-                class="mb-4 text-3xl font-medium text-white md:leading-none font-wide lg:text-heading"
-              >
-                Тестирование продуктов «МТС»
-              </h1>
-              <p class="text-xl font-normal text-white font-compact">
-                МТС постоянно выпускает новые диджитал-продукты, и вы можете
-                сделать их удобнее. Находите баги, отправляйте отчёты об ошибках
-                и получайте вознаграждение.
-              </p>
-            </div>
-            <div
-              class="flex items-center justify-between mt-6 lg:col-span-2 md:mt-0"
-            >
-              <a
-                class="flex items-center p-3.5 text-xl font-regular leading-4 tracking-wider font-text text-txt rounded-2xl bg-white"
-                href="/"
-              >
-                <span class="px-2 py-1">Войти</span>
-              </a>
-            </div>
-          </div></a
-        >
+        </a>
       </swiper-slide>
 
       <swiper-slide
         style="width: auto !important"
-        class="relative overflow-hidden min-h-[468px] w-full h-[60vh] md:h-auto rounded-2xl md:rounded-4xl"
+        class="relative overflow-hidden min-h-[468px] h-[60vh] md:h-auto rounded-2xl md:rounded-4xl w-full"
       >
-        <a href="/"
-          ><img
-            class="absolute top-0 left-0 object-cover md:w-full w-full md:h-inherit h-full md:rounded-4xl rounded-2xl max-w-[200vw]"
-            src="/carousel.jpg"
+        <a class="w-full" href="/">
+          <img
+            class="absolute top-0 left-0 object-cover w-full h-auto md:w-auto md:h-full md:rounded-4xl rounded-2xl max-w-[200vw]"
+            :src="bannerSrc"
             alt="slide.heading"
           />
-          <div
-            class="relative top-0 left-0 grid grid-cols-1 px-5 pb-8 pt-13 md:px-10 lg:grid-cols-2 min-h-35"
-          >
-            <div class="md:h-[300px] xl:mb-6 mb-4">
-              <h1
-                class="mb-4 text-3xl font-medium text-white md:leading-none font-wide lg:text-heading"
-              >
-                Тестирование продуктов «МТС»
-              </h1>
-              <p class="text-xl font-normal text-white font-compact">
-                МТС постоянно выпускает новые диджитал-продукты, и вы можете
-                сделать их удобнее. Находите баги, отправляйте отчёты об ошибках
-                и получайте вознаграждение.
-              </p>
-            </div>
-            <div
-              class="flex items-center justify-between mt-6 lg:col-span-2 md:mt-0"
-            >
-              <a
-                class="flex items-center p-3.5 text-xl font-regular leading-4 tracking-wider font-text text-txt rounded-2xl bg-white"
-                href="/"
-              >
-                <span class="px-2 py-1">Войти</span>
-              </a>
-            </div>
-          </div></a
-        >
+        </a>
       </swiper-slide>
 
       <swiper-slide
         style="width: auto !important"
-        class="relative overflow-hidden min-h-[468px] w-full h-[60vh] md:h-auto rounded-2xl md:rounded-4xl"
+        class="relative overflow-hidden min-h-[468px] h-[60vh] md:h-auto rounded-2xl md:rounded-4xl w-full"
       >
-        <a href="/"
-          ><img
-            class="absolute top-0 left-0 object-cover md:w-full w-full md:h-inherit h-full md:rounded-4xl rounded-2xl max-w-[200vw]"
-            src="/carousel.jpg"
+        <a class="w-full" href="/">
+          <img
+            class="absolute top-0 left-0 object-cover w-full h-auto md:w-auto md:h-full md:rounded-4xl rounded-2xl max-w-[200vw]"
+            :src="bannerSrc"
             alt="slide.heading"
           />
-          <div
-            class="relative top-0 left-0 grid grid-cols-1 px-5 pb-8 pt-13 md:px-10 lg:grid-cols-2 min-h-35"
-          >
-            <div class="md:h-[300px] xl:mb-6 mb-4">
-              <h1
-                class="mb-4 text-3xl font-medium text-white md:leading-none font-wide lg:text-heading"
-              >
-                Тестирование продуктов «МТС»
-              </h1>
-              <p class="text-xl font-normal text-white font-compact">
-                МТС постоянно выпускает новые диджитал-продукты, и вы можете
-                сделать их удобнее. Находите баги, отправляйте отчёты об ошибках
-                и получайте вознаграждение.
-              </p>
-            </div>
-            <div
-              class="flex items-center justify-between mt-6 lg:col-span-2 md:mt-0"
-            >
-              <a
-                class="flex items-center p-3.5 text-xl font-regular leading-4 tracking-wider font-text text-txt rounded-2xl bg-white"
-                href="/"
-              >
-                <span class="px-2 py-1">Войти</span>
-              </a>
-            </div>
-          </div></a
-        >
+        </a>
       </swiper-slide>
+
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 
-const slides = ref([
-  {
-    image: "/carousel.jpg",
-    heading: "Тестирование продуктов «МТС»",
-    description:
-      "МТС постоянно выпускает новые диджитал-продукты, и вы можете сделать их удобнее. Находите баги, отправляйте отчёты об ошибках и получайте вознаграждение.",
-  },
-  {
-    image: "/carousel.jpg",
-    heading: "Тестирование продуктов «МТС»",
-    description:
-      "МТС постоянно выпускает новые диджитал-продукты, и вы можете сделать их удобнее. Находите баги, отправляйте отчёты об ошибках и получайте вознаграждение.",
-  },
-  {
-    image: "/carousel.jpg",
-    heading: "Тестирование продуктов «МТС»",
-    description:
-      "МТС постоянно выпускает новые диджитал-продукты, и вы можете сделать их удобнее. Находите баги, отправляйте отчёты об ошибках и получайте вознаграждение.",
-  },
-]);
+const windowWidth = ref(window.innerWidth);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+};
 
 const swiperOptions = ref({
   slidesPerView: 1,
@@ -186,16 +94,17 @@ const swiperOptions = ref({
     // Add more breakpoints as needed
   },
 });
+
 onMounted(() => {
-  const swiper = document.querySelector(".swiper").swiper;
+  window.addEventListener("resize", handleResize);
+});
 
-  // Forcefully override widths on all slides
-  swiper.slides.forEach((slide) => {
-    slide.style.width = "auto";
-    slide.style.maxWidth = "100%";
-  });
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", handleResize);
+});
 
-  swiper.update(); // Update swiper to apply new widths
+const bannerSrc = computed(() => {
+  return windowWidth.value < 768 ? "/banner-mob.png" : "/banner-desktop.png";
 });
 </script>
 

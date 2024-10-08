@@ -1,6 +1,12 @@
 <script setup>
 import AccordeonCard from "../components/AccordeonCard.vue";
 import Carousel from "../components/Carousel.vue";
+import MembranaKids from "../components/icons/MembranaKids.vue";
+import MTSavto from "../components/icons/MTSavto.vue";
+import MTSstroki from "../components/icons/MTSstroki.vue";
+import MTSUmnyyDom from "../components/icons/MTSUmnyyDom.vue";
+import MTSVerse from "../components/icons/MTSVerse.vue";
+import Nuum from "../components/icons/Nuum.vue";
 </script>
 <template>
   <main
@@ -94,51 +100,31 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/Verse logo.png"
-                alt="MTS Verse logo"
-              />
+              <MTSVerse />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/Membrana Kids.png"
-                alt="Membrana Kids logo"
-              />
+              <MembranaKids />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-12"
-                src="/icons/NUUM.png"
-                alt="NUUM logo"
-              />
+              <Nuum />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/MTS stroki.png"
-                alt="MTS Строки logo"
-              />
+              <MTSstroki />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/MTS auto.png"
-                alt="MTS Авто logo"
-              />
+              <MTSavto />
             </div>
 
             <div
@@ -154,11 +140,7 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/MTS smart home.png"
-                alt="MTS Умный дом logo"
-              />
+              <MTSUmnyyDom />
             </div>
           </div>
 
@@ -196,51 +178,31 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/Verse logo.png"
-                alt="MTS Verse logo"
-              />
+              <MTSVerse />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/Membrana Kids.png"
-                alt="Membrana Kids logo"
-              />
+              <MembranaKids />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-12"
-                src="/icons/NUUM.png"
-                alt="NUUM logo"
-              />
+              <Nuum />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/MTS stroki.png"
-                alt="MTS Строки logo"
-              />
+              <MTSstroki />
             </div>
 
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/MTS auto.png"
-                alt="MTS Авто logo"
-              />
+              <MTSavto />
             </div>
 
             <div
@@ -256,11 +218,7 @@ import Carousel from "../components/Carousel.vue";
             <div
               class="w-[190px] h-[90px] rounded-4xl border border-divider flex items-center justify-center"
             >
-              <img
-                class="object-cover w-auto h-9"
-                src="/icons/MTS smart home.png"
-                alt="MTS Умный дом logo"
-              />
+              <MTSUmnyyDom />
             </div>
           </div>
         </div>
